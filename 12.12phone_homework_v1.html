@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const TAXRATE = 0.1;
+const PHONEPRICE = 120;
+const ACCECORYPRICE = 21;
+const MAX_VALUE_WITH_ACCECORY = 1000;
+
+let bill = 3000;
+let zero = 0;
+let fullPricePhone;
+let fullPriceAcccory;
+
+function taxxPhone () {
+return fullPricePhone = PHONEPRICE + (TAXRATE*PHONEPRICE);
+}
+
+function taxxAcecc () {
+return fullPriceAcccory = ACCECORYPRICE + (TAXRATE*ACCECORYPRICE);
+}
+
+do {
+    zero=zero+taxxPhone();
+    console.log (rightPricePhone());
+     if (zero<MAX_VALUE_WITH_ACCECORY){
+        zero=zero+taxxAcecc();
+    console.log (rightPriceAccecuary())
+     }
+}
+while (zero+taxxPhone()<bill){
+    console.log ('Вы не можете себе этого позволить');
+}
+
+ function rightPricePhone () {
+      return "$" + zero.toFixed( 2 )+' только телефон';
+  }
+function rightPriceAccecuary () {
+    return "$" + zero.toFixed( 2 )+" телефон+аксессуар";
+}
+        </script>
+</body>
+</html>
