@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .header{
+         text-align: center;
+         background-color:lightgray;
+         color: black;
+         font-family: sans-serif;
+         font-size: 25px;
+         padding-top:10px;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            width: 520px;
+            margin-left: 250px;
+            border: solid lightgrey;
+        }
+        .inputClass{
+            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 10px;
+            width: 210px;
+            height: 26px;
+            padding: 0px;
+            border-radius: 0px;
+        }
+        .border{
+            border-left:solid 3px lightgrey;
+            padding-left: 8px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            flex-basis: 430px;
+            padding-top:  18px;
+            
+        }
+        .buttonDelete{
+            background-color: red;
+            color: white;
+            margin-right: 30px ;
+            text-align: left;
+            margin-bottom: 16px;
+            margin-top: 24px;
+            border-radius: 3px;
+            border:none;
+        }
+        .head{
+            color: black;
+            padding-left: 25px;
+        }
+        .footer{
+            margin-top: 20px;   
+        }
+        .form{
+            text-align: center; 
+            padding-bottom: 20px;  
+        }
+        .search2{
+            margin:0px; 
+            height:26px;
+            padding:0px;
+            border-radius: 0px; 
+        }
+        .btnSubmit{
+            margin:-6px; 
+            background-color: green; 
+            color: white; 
+            width: 70px; 
+            height:30px; 
+            padding:0px;
+            border-radius: 3px;
+            border:none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex" >
+        <div class="header">Books App<br>
+            <input type="text" class="inputClass" name="Search1" placeholder="Search books...">
+        </div>
+    <div>
+    <h4 class="head">Books to Read</h4>
+    <div style="display: flex;">
+       <div class="border">Name of the Wind</div>
+            <input type="button" class="buttonDelete" name="Delete1" value="delete">
+    </div>
+       <div style="display: flex;">
+            <div class="border">The wise Man's Fear</div>
+                <input type="button" class="buttonDelete" name="Delete1" value="delete">
+        </div>
+        <div style="display: flex;">
+            <div class="border">Kafka on the Shore</div> 
+                <input type="button" class="buttonDelete" name="Delete1" value="delete">
+        </div>
+        <div style="display: flex;">
+            <div class="border">The master and The Margarita</div>
+                <input type="button" class="buttonDelete" name="Delete1" value="delete">   
+        </div>
+        <div class="footer">
+            <form class="form">
+                <input type="text" placeholder="Add a book..." class="search2">
+                    <input type="submit" value="Add" class="btnSubmit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
