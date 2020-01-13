@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <select class="mySelect">
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Yellow</option>
+      </select>
+    <input type="submit" onclick="changeColor()" value="Changecolor">
+    <script>
+    function changeColor() {
+        let selectColor = document.querySelector('.mySelect').value;
+        if (selectColor=='Green'){
+            document.body.style.backgroundColor = 'green'; 
+        }
+        else if (selectColor=='Blue'){
+            document.body.style.backgroundColor = 'blue'; 
+        }
+        else if (selectColor=='Yellow'){
+            document.body.style.backgroundColor = 'yellow'; 
+        };
+
+    };
+    </script>
+</body>
+</html>

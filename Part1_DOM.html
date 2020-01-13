@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="Textbox" placeholder="red"> 
+    <input type="submit" onclick="changeColor()" value="Changecolor">
+    <script>
+        function changeColor() {
+            let enteredColor = document.querySelector('input').value;
+            if (enteredColor=='red'){
+                document.body.style.backgroundColor = 'red';  
+            }
+            else if (enteredColor=='blue'){
+                document.body.style.backgroundColor = 'blue'; 
+            }
+            else if (enteredColor=='green'){
+                document.body.style.backgroundColor = 'green'; 
+            }
+            else if (enteredColor==''){
+                document.body.style.backgroundColor = 'white'; 
+            };
+        };
+    </script>
+</body>
+</html>
