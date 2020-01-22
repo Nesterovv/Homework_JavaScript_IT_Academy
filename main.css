@@ -1,0 +1,6 @@
+body {
+  background-color: var(--color);
+}
+.invalid { 
+  border-color: red; 
+}
