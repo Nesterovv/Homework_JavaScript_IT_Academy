@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="find" name="plz" />
+    <div id="error"></div>
+    <script>
+        let inputBirth = document.getElementById('find');
+        inputBirth.addEventListener('blur', function() {
+            let birthdayDate = new Date(Date.parse(inputBirth.value));
+            let nowDate = new Date();
+            birthdayDate.setFullYear(nowDate.getFullYear());
+            let diff = Math.floor((birthdayDate - nowDate.getTime()) / (1000 * 60 * 60 * 24));
+            error.innerHTML = diff + ' дней';
+        });
+    </script>
+</body>
+
+</html>
