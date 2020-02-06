@@ -33,6 +33,7 @@
             let emailmsg = document.getElementById('email_message');
             let pwd = document.getElementById('password_message');
             let regexp = /\b[a-z][a-z0-9A-Z]{2,30}@[a-z]{1,5}\.[a-z]{1,5}\b/i;
+            let regexpPassword = /^[a-z0-9_-]{5,10}$/;
             if (email.match(regexp)) {
                 emailmsg.innerText = 'вы ввели правильный имейл';
                 emailmsg.style.color = "green";
@@ -42,7 +43,6 @@
                 emailmsg.style.color = "red";
                 document.getElementById("email").style.borderColor = "red";
             }
-            let regexpPassword = /^[a-z0-9_-]{5,10}$/;
             if (password.match(regexpPassword)) {
                 pwd.innerText = 'вы ввели подходящий пароль';
                 pwd.style.color = "green";
