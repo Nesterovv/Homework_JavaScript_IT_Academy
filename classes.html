@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+class Man {
+    constructor (gender){
+        this.gender = gender;
+    }
+};
+
+ class Worker extends Man {
+     constructor (gender, rate){
+         super(gender);
+        this.rate = rate;
+        this.company = "issoft";
+
+             }
+         };
+
+          class Boss extends Worker {
+             constructor (rate, company, bossName){
+                  super(rate, company);
+                  this.bossName = bossName; 
+              }
+          };
+        var boss = new Boss ('Мужской', '2100', 'Андрей');
+    console.log(boss); 
+    
+   </script> 
+</body>
+</html>
